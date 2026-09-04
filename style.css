@@ -1,0 +1,486 @@
+:root {
+    --primary: #071952;
+    --accent: #f5b700;
+    --background: #f4f6f9;
+    --text: #222222;
+    --white: #ffffff;
+    --border: #dddddd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+h2 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: var(--primary);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: var(--primary);
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 8%;
+}
+
+nav h1 {
+    color: var(--white);
+
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+
+    list-style: none;
+
+    gap: 25px;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+nav a {
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+#home {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        #172d80
+    );
+
+    color: var(--white);
+
+    padding-top: 120px;
+}
+
+#home h2 {
+    color: var(--white);
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 18px;
+}
+
+#home a {
+    display: inline-block;
+
+    background-color: var(--accent);
+
+    color: var(--primary);
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    margin: 15px 5px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+#home a:hover {
+    background-color: var(--white);
+}
+
+#about {
+    background-color: var(--white);
+}
+
+#about p {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+#about ul {
+    max-width: 700px;
+
+    margin: 15px auto 30px;
+
+    padding: 20px 40px;
+
+    background-color: var(--background);
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#matches {
+    background-color: var(--background);
+}
+
+#matches form {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+select,
+input {
+    padding: 10px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+button {
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: var(--primary);
+
+    color: var(--white);
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--accent);
+
+    color: var(--primary);
+}
+
+.table-container {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: var(--white);
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: var(--primary);
+
+    color: var(--white);
+
+    padding: 14px;
+}
+
+td {
+    padding: 12px;
+
+    text-align: center;
+
+    border: 1px solid var(--border);
+}
+
+tbody tr:hover {
+    background-color: #fff8dc;
+}
+
+td a {
+    background-color: var(--accent);
+
+    color: var(--primary);
+
+    padding: 7px 14px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+#booking {
+    background-color: var(--white);
+}
+
+.booking-container {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+#booking form {
+    max-width: none;
+
+    margin: 0;
+}
+
+fieldset {
+    border: 2px solid var(--primary);
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    background-color: var(--primary);
+
+    color: var(--white);
+
+    padding: 8px 15px;
+
+    border-radius: 5px;
+}
+
+fieldset p {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 18px;
+}
+
+fieldset label {
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.booking-container aside {
+    max-width: none;
+
+    margin: 0;
+
+    padding: 25px;
+
+    background-color: var(--background);
+
+    border: 2px solid var(--accent);
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-container aside h3 {
+    text-align: center;
+}
+
+.booking-container aside p {
+    border-bottom: 1px solid var(--border);
+
+    padding-bottom: 8px;
+}
+
+#my-bookings {
+    background-color: var(--background);
+}
+
+#guidelines {
+    background-color: var(--white);
+}
+
+#guidelines article {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 31%;
+
+    margin: 1%;
+
+    padding: 25px;
+
+    background-color: var(--background);
+
+    border-radius: 10px;
+
+    border: 1px solid var(--border);
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#guidelines article h3 {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary);
+
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+
+    nav {
+        padding: 15px 5%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    #guidelines article {
+        width: 47%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        gap: 10px;
+
+        align-items: center;
+    }
+
+    #home {
+        padding-top: 180px;
+
+        min-height: 100vh;
+    }
+
+    #home h2 {
+        font-size: 30px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 50px 4%;
+    }
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    fieldset {
+        padding: 20px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 800px;
+    }
+
+    #guidelines article {
+        display: block;
+
+        width: 100%;
+
+        margin: 15px 0;
+    }
+
+    #about ul {
+        padding: 15px 30px;
+    }
+
+}
