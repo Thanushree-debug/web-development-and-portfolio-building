@@ -10,7 +10,7 @@ The project was developed as part of the HTML and CSS activities and was tested 
 
 ## Technologies Used
 
-* HTML5
+* HTML
 * CSS3
 * Flexbox
 * CSS Grid
