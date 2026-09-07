@@ -1,10 +1,10 @@
 :root {
-    --primary: #b71c1c;
-    --accent: #ffc107;
-    --background: #f5f5f5;
+    --primary: #071952;
+    --accent: #f5b700;
+    --background: #f4f6f9;
     --text: #222222;
     --white: #ffffff;
-    --border: #d6d6d6;
+    --border: #dddddd;
 }
 
 * {
@@ -84,11 +84,13 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+
     background: linear-gradient(
         135deg,
         var(--primary),
-        #e53935
+        #172d80
     );
+
     color: var(--white);
     padding-top: 120px;
 }
@@ -134,7 +136,6 @@ nav a:hover {
     padding: 20px 40px;
     background-color: var(--background);
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 #matches {
@@ -169,11 +170,6 @@ button:hover {
     color: var(--primary);
 }
 
-.table-container {
-    width: 100%;
-    overflow-x: auto;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -194,7 +190,7 @@ td {
 }
 
 tbody tr:hover {
-    background-color: #fff3cd;
+    background-color: #fff8dc;
 }
 
 td a {
@@ -210,16 +206,9 @@ td a {
     background-color: var(--white);
 }
 
-.booking-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
-    align-items: start;
-}
-
 #booking form {
-    max-width: none;
-    margin: 0;
+    max-width: 650px;
+    margin: auto;
 }
 
 fieldset {
@@ -247,9 +236,10 @@ fieldset label {
     margin-bottom: 5px;
 }
 
-.booking-container aside {
-    max-width: none;
-    margin: 0;
+
+aside {
+    max-width: 650px;
+    margin: 30px auto 0;
     padding: 25px;
     background-color: var(--background);
     border: 2px solid var(--accent);
@@ -257,11 +247,11 @@ fieldset label {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-.booking-container aside h3 {
+aside h3 {
     text-align: center;
 }
 
-.booking-container aside p {
+aside p {
     border-bottom: 1px solid var(--border);
     padding-bottom: 8px;
 }
@@ -269,6 +259,7 @@ fieldset label {
 #my-bookings {
     background-color: var(--background);
 }
+
 
 #guidelines {
     background-color: var(--white);
@@ -290,6 +281,7 @@ fieldset label {
     text-align: center;
 }
 
+
 footer {
     background-color: var(--primary);
     color: var(--white);
@@ -299,83 +291,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-@media screen and (max-width: 900px) {
-    nav {
-        padding: 15px 5%;
-    }
-
-    nav ul {
-        gap: 15px;
-    }
-
-    section {
-        padding: 60px 5%;
-    }
-
-    .booking-container {
-        grid-template-columns: 1fr;
-    }
-
-    #guidelines article {
-        width: 47%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
-    #home {
-        padding-top: 180px;
-        min-height: 100vh;
-    }
-
-    #home h2 {
-        font-size: 30px;
-    }
-
-    #home p {
-        font-size: 16px;
-    }
-
-    section {
-        padding: 50px 4%;
-    }
-
-    .booking-container {
-        grid-template-columns: 1fr;
-    }
-
-    fieldset {
-        padding: 20px;
-    }
-
-    .table-container {
-        overflow-x: auto;
-    }
-
-    table {
-        min-width: 800px;
-    }
-
-    #guidelines article {
-        display: block;
-        width: 100%;
-        margin: 15px 0;
-    }
-
-    #about ul {
-        padding: 15px 30px;
-    }
 }
